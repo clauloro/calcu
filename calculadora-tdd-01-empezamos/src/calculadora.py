@@ -10,13 +10,8 @@ class Calculadora:
         if b == 0:
             return "No se puede dividir entre 0"
         return a / b
-    def factorial(self, a):
-        if a < 0:
-            raise ValueError("El número debe ser no negativo")
-        elif a == 0 or a == 1:
-            return 1
-        else:
-            resultado = 1
-            for i in range(2, a + 1):
-                resultado *= i
-            return resultado
+    def factorial(numero):
+        fact = 1
+        for i in range(1, numero + 1):
+            fact *= i
+        return fact
